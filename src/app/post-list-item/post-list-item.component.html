@@ -1,0 +1,10 @@
+<li [ngClass]="{'list-group-item': true,
+  'list-group-item-success': loveIts > 0,
+  'list-group-item-danger': loveIts < 0}"
+  >
+  <header>
+    <h3 [ngClass]="{'post-title': true}">{{title}}</h3>
+    <h3 [ngClass]="{'post-date': true}">{{createdAt | date: 'short'}}</h3>
+  </header>
+   {{content}}
+</li>
