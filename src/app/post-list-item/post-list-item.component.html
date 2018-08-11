@@ -3,8 +3,11 @@
   'list-group-item-danger': loveIts < 0}"
   >
   <header>
-    <h3 [ngClass]="{'post-title': true}">{{title}}</h3>
-    <h3 [ngClass]="{'post-date': true}">{{createdAt | date: 'short'}}</h3>
+    <h3 class='post-title'>{{title}}</h3>
+    <h3 class='post-date'>{{createdAt | date: 'short'}}</h3>
   </header>
-   {{content}}
+  <div> {{content}}</div>
+
+   <button class= "btn btn-success" (click)="onAddLove()">Love it!</button>
+   <button class= "btn btn-danger" (click)="onRemoveLove()">Don't love it!</button>
 </li>

@@ -6,7 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./post-list.component.css']
 })
 export class PostListComponent implements OnInit {
-  @Input() posts: Array<object>
+  @Input() posts: {
+    title: string,
+    content: string,
+    loveIts: number,
+    created_at: Date
+  }
 
   constructor() { }
 
