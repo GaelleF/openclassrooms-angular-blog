@@ -12,3 +12,7 @@ li>header {
   color: gray;
   font-style: italic;
 }
+
+.btn {
+  margin: 10px;
+}
