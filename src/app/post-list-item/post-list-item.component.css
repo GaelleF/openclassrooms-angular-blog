@@ -1,0 +1,14 @@
+.post-title {
+  font-weight: bold;
+}
+
+li>header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-date {
+  font-size: 2rem;
+  color: gray;
+  font-style: italic;
+}
